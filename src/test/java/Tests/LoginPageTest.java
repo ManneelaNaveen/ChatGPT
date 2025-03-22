@@ -9,7 +9,7 @@ import Utils.ConfigReader;
 public class LoginPageTest extends BaseClass {
 
 	    @Test
-	    public void testValidLogin() {    	
+	    public void testValidLogin() throws InterruptedException {    	
 	 
 	    	
 	    	LoginPage loginPage = new LoginPage(driver);

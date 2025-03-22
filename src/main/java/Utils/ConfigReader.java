@@ -10,7 +10,9 @@ public class ConfigReader {
     // Static block to load properties only once
     
     static {
+    	
         try {
+        	
             // Load properties file from resources folder
         	
             FileInputStream file = new FileInputStream("src/main/resources/Config.properties");
@@ -20,6 +22,7 @@ public class ConfigReader {
             throw new RuntimeException("Failed to load config.properties file: " + e.getMessage());
         }
     }
+    
 
     public static String getProperty(String key) {
         return properties.getProperty(key);

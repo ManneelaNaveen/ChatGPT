@@ -21,6 +21,7 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Ensure properties are correctly loaded
+        
         String url = ConfigReader.getProperty("url");
         if (url == null) {
             throw new RuntimeException("URL is missing in config.properties file!");
